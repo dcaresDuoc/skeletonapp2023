@@ -1,0 +1,7 @@
+{
+  "name": "SkeletonApp2023",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
