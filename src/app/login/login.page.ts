@@ -17,7 +17,7 @@ export class LoginPage implements OnInit {
 
   user={
     usuario:"asdfghj",
-    apellido:"Dicaprio"
+    apellido:"sdfghjsdfghjksdfghj"
   }
 
     usuario = new FormGroup({
@@ -25,6 +25,9 @@ export class LoginPage implements OnInit {
     pass: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(4)]),
   });
 
+  testclase(){
+    this.router.navigate(['/home']);
+}
 
   goToPagina2() {
     let navigationExtras: NavigationExtras = {

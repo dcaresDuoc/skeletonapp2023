@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class HomePage implements OnInit {
 
   userHome: any;
+  pass: any;
   value = "dcaresg";
 
 
