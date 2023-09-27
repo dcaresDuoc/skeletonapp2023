@@ -21,12 +21,15 @@ export class HomePage implements OnInit {
     this.activeroute.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation()?.extras.state) {
           this.userHome = this.router.getCurrentNavigation()?.extras.state?.['user'];
+          console.log(this.router.getCurrentNavigation()?.extras.state?.['correo']);
       }
   });
 
     
 
   }
+
+  
 
   ngOnInit(): void {
    
