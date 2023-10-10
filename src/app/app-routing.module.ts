@@ -23,9 +23,14 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'detallecurso',
+    loadChildren: () => import('./detallecurso/detallecurso.module').then( m => m.DetallecursoPageModule),
+    //canActivate: [AuthGuard]
+  },
+  {
     path: '**',
     loadChildren: () => import('./page404/page404.module').then( m => m.Page404PageModule)
-  },
+  }
 ];
 
 @NgModule({

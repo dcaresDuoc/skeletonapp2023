@@ -22,7 +22,7 @@
       <ion-input label="{{textPass}}" labelPlacement="floating" placeholder="{{desPass}}" formControlName="pass"></ion-input>
     </ion-item>
   
-    <ion-button expand="block" color="success" [disabled]="!usuario.valid"  (click)="goToPagina2()" fill="outline">{{textBtn}}</ion-button> 
+    <ion-button expand="block" color="success" [disabled]="!usuario.valid"  (click)="apiLogin()" fill="outline">{{textBtn}}</ion-button> 
     <!-- <ion-button expand="block" color="success"  (click)="testclase()" fill="outline">{{textBtn}}</ion-button> 
     <ion-button expand="block" color="success"  [routerLink]="['/home']" fill="outline">Nav RouiterLink</ion-button>  -->
 
