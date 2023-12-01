@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle del Curso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img [src]="qrDataURL" *ngIf="qrDataURL">
+
+    <ion-list>
+        <ion-list-header>
+            Alumnos del Curso: {{ cursol?.nombre }}
+        </ion-list-header>
+        <ion-item *ngFor="let alumno of alumnosl">
+            <ion-label>{{ alumno.nombre }}</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
