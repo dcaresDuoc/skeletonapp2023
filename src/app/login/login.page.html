@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-content">
+  <ion-item>
+    <!-- <ion-input label="Default input" [(ngModel)]="user.apellido"></ion-input> -->
+  </ion-item>
+
+  <div class="centered-container">
+    <img src="assets/img_login.png" alt="Login Image" class="login-image">
+  </div>
+
+  <form [formGroup]="usuario">
+    <ion-item>
+      <ion-input label="{{textUser}}" labelPlacement="floating" placeholder="{{desUser}}" formControlName="user"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="{{textPass}}" labelPlacement="floating" placeholder="{{desPass}}" formControlName="pass"></ion-input>
+    </ion-item>
+  
+    <ion-button expand="block" color="success" [disabled]="!usuario.valid"  (click)="apiLogin()" fill="outline">{{textBtn}}</ion-button> 
+    <!-- <ion-button expand="block" color="success"  (click)="testclase()" fill="outline">{{textBtn}}</ion-button> 
+    <ion-button expand="block" color="success"  [routerLink]="['/home']" fill="outline">Nav RouiterLink</ion-button>  -->
+
+  </form>
+
+  <!-- <ion-card #card>
+    <ion-card-content>Card</ion-card-content>
+  </ion-card>
+
+  <ion-button (click)="play()">Play</ion-button> -->
+  
+
+</ion-content>

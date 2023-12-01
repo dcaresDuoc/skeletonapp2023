@@ -1,0 +1,36 @@
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Usar viewport height en lugar de porcentaje */
+    background-color: #f5f5f5; /* Agregar un color de fondo */
+  }
+  
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Reducir la altura del contenedor */
+  }
+  
+  .login-image {
+    max-width: 50%;
+    max-height: 50%; /* Añadir máximo alto */
+    width: auto;
+    height: auto;
+  }
+  
+  .input-container {
+    text-align: center;
+    margin: 1em 0; /* Agregar margen */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto; /* Mover el botón hacia abajo */
+    padding-bottom: 2em; /* Agregar espacio en la parte inferior */
+  }
+  
